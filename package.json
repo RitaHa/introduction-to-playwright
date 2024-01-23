@@ -1,0 +1,17 @@
+{
+  "name": "introduction-to-playwright",
+  "version": "1.0.0",
+  "description": "Playwright with Node.js test project",
+  "main": "index.js",
+  "scripts": {
+    "test:e2e": "npx playwright test tests/",
+    "test:e2e:smoke": "npx playwright test tests-examples --grep @smoke --project=chromium"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.41.1",
+    "@types/node": "^20.11.5"
+  }
+}

@@ -1,2 +1,2 @@
 # introduction-to-playwright
-Playwright with Node.js test project
+Playwright with TypeScript test project

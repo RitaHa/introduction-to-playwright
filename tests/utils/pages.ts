@@ -1,5 +1,5 @@
 export default {
-    bookStoragePage: 'bookStore',
+    bookStorePage: 'bookStore',
     homePage: 'home',
     loginPage: 'login',
     profile: 'profile',

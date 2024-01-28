@@ -4,7 +4,7 @@ import baseEnvUrl from './tests/utils/environmentBaseUrl';
 require('dotenv').config();
 
 export default defineConfig({
-  // globalSetup: require.resolve('./tests/setup/global-setup'),
+  globalSetup: require.resolve('./tests/setup/global-setup'),
   fullyParallel: false,
   forbidOnly: !!process.env.CI,
   retries: 0,
@@ -12,7 +12,7 @@ export default defineConfig({
   reporter: 'html',
   // timeout: 5000,
   use: {
-    // storageState: 'storageState.json',
+    storageState: 'storageState.json',
     trace: 'on',
     baseURL: process.env.ENV === 'production' 
       ? baseEnvUrl.production.home
